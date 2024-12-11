@@ -24,10 +24,10 @@ module.exports = {
       ml: "18px",
       xl: "20px",
       xxl: "22px",
-      xxml: "24px",
-      xxxl: "26px",
-      xxxxl: "30px",
-      xxxxxl: "32px",
+      xxxl: "24px",
+      xxxxl: "26px",
+      xxxxxl: "30px",
+      xxxxxxl: "32px",
     },
     extend: {
       colors: {
@@ -35,7 +35,8 @@ module.exports = {
         "dark-navy": "#113946",
         "dark-brown": "#BCA37F",
         "light-brown": "#EAD7BB",
-
+        "block-white": "#FCF5ED",
+        "warning-yellow": "#F7C566",
         "black-100": "#5B5B5B",
         "black-200": "#424242",
         "black-400": "#2E2E2E",
