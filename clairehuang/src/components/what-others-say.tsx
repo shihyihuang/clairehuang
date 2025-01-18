@@ -12,8 +12,8 @@ export const WhatOthersSay = () => {
   const { scrollXProgress } = useScroll({ container: ref });
 
   return (
-    <div>
-      <motion.div className="flex justify-center items-center gap-4 pb-24">
+    <div className="max-w-full overflow-hidden">
+      <motion.div className="flex justify-center items-center pb-l">
         <svg id="progress" width="50" height="50" viewBox="0 0 100 100">
           <circle cx="50" cy="50" r="30" className="bg" />
           <motion.circle
@@ -26,9 +26,11 @@ export const WhatOthersSay = () => {
         </svg>
       </motion.div>
 
-      <ul className="flex gap-space-4 " ref={ref}>
+      <ul className="flex flex-nowrap overflow-x-auto gap-space-4" ref={ref}>
         {testimonialList.map((content, index) => (
-          <TestimonialCard key={index} content={content} />
+          <li>
+            <TestimonialCard key={index} content={content} />
+          </li>
         ))}
       </ul>
     </div>

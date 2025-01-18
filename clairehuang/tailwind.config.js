@@ -62,6 +62,7 @@ module.exports = {
         m: "25px",
         l: "50px",
         xl: "100px",
+        xxl: "150px",
         "space-0": "2px",
         "space-1": "4px",
         "space-2": "8px",
