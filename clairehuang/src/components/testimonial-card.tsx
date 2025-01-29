@@ -31,7 +31,7 @@ export const TestimonialCard = (props: ITestimonialCard) => {
           ))}
         </div>
 
-        <p className="playpen-san-content text-dark-brown text-m font-[400] overflow-y-auto max-h-[200px]">
+        <p className="playpen-san-content text-dark-brown text-m font-[400] overflow-y-auto max-h-[200px] text-start">
           {" "}
           {content.content}{" "}
         </p>

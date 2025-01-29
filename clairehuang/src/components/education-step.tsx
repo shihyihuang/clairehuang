@@ -8,21 +8,21 @@ export const EducationStep = (props: IEducationStep) => {
   const { content } = props;
 
   return (
-    <li className="mb-10 ms-4">
+    <li className="mb-6 ms-4 mt-m">
       <div className="absolute w-3 h-3 rounded-full mt-s -start-1.5 border bg-dark-navy border-dark-navy"></div>
-      <div className="ml-s">
-        <p className="text-xxxl md:text-xxxxxl font-bold text-dark-navy">
+      <div className="ml-s  text-start">
+        <p className="text-xxxl md:text-xxxxxxl font-black text-dark-navy leading-tight">
           {content.degree}
         </p>
-        <div className="flex items-center justify-between mr-s md:mr-xl">
-          <div>
-            <p className="text-xxl md:text-xxxxxl font-medium text-dark-brown">
+        <div className="flex items-center playpen-san-content">
+          <div className="w-5/6">
+            <p className="text-xl md:text-xxxl text-dark-brown pt-xs py-space-1 leading-tight">
               {content.institution}
             </p>
-            <time className="text-l md:text-xl font-semibold text-base-white">
+            <time className="text-l md:text-xl font-normal  text-base-white">
               {content.time}
             </time>
-            <p className="text-l md:text-xl font-semibold text-base-white">
+            <p className="text-l md:text-xl font-normal text-base-white leading-tight">
               {" "}
               {content.info}
             </p>

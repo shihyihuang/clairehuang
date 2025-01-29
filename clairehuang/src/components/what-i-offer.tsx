@@ -4,7 +4,6 @@ import { useState } from "react";
 
 export const WhatIOffer = () => {
   const [selectedSkill, setSelectedSkill] = useState(5);
-  console.log("WhatIOffer: ", selectedSkill);
   return (
     <div className="grid gap-m grid-cols-2 l:grid-cols-4 items-end">
       {skills.map((content, index) => (
