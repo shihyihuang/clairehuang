@@ -3,12 +3,15 @@ import { HowIGotHere } from "../components/how-i-got-here";
 import { WhatIOffer } from "../components/what-i-offer";
 
 const Home = () => {
+  const landingVideoClass =
+    "absolute inset-0 w-full h-full object-cover opacity-40";
+
   return (
     <div>
       <div className="relative w-full h-screen overflow-hidden">
         <video
           src="./landing-l.mov"
-          className="absolute inset-0 w-full h-full object-cover hidden l:block opacity-50 "
+          className={`${landingVideoClass} hidden l:block`}
           autoPlay
           loop={true}
           muted
@@ -16,7 +19,7 @@ const Home = () => {
         />
         <video
           src="./landing-s.mov"
-          className="absolute inset-0 w-full h-full object-cover block l:hidden opacity-40"
+          className={`${landingVideoClass} block l:hidden`}
           autoPlay
           loop={true}
           muted

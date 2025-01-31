@@ -3,7 +3,7 @@ import { FaAngleDown } from "react-icons/fa6";
 import { Chip } from "../chip";
 import { MdOpenInNew } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
-import { ImageSlider } from "../image-slider";
+import { ImageSlider } from "./image-slider";
 
 interface IProjectDrawer {
   project: IProject;
