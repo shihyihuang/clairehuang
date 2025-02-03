@@ -63,7 +63,7 @@ export const ProjectDrawer = (props: IProjectDrawer) => {
               className="w-[70vh] l:w-[90vh] rounded-m"
               autoPlay
               muted
-              playsInline
+              loop
             />
           )}
           {project.images && project.images.length > 0 && (
