@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { IEmail } from "../../types/email";
 import { EMAIL_VALIDATION } from "../../config/email-validation";
+import { Spinner } from "../spinner";
 
 interface IContactForm {
   status: string;
@@ -161,14 +162,8 @@ export const ContactForm = (props: IContactForm) => {
         </div>
         <button
           type="submit"
-          className="text-xxl bg-dark-brown rounded-m w-full py-space-1 text-base-white shadow-md hover:-translate-y-1 active:scale-90 hover:bg-base-white hover:text-dark-brown hover:border-2 hover:border-dark-brown">
-          {isLoading ? (
-            <svg className="mr-3 size-5 animate-spin" viewBox="0 0 24 24">
-              {" "}
-            </svg>
-          ) : (
-            "SEND"
-          )}
+          className="flex justify-center items-center text-xxl bg-dark-brown rounded-m w-full py-space-2 text-base-white shadow-md hover:-translate-y-1 active:scale-90 hover:bg-base-white hover:text-dark-brown hover:border-2 hover:border-dark-brown">
+          {isLoading ? <Spinner /> : "SEND"}
         </button>
       </div>
     </form>
