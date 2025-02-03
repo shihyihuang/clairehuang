@@ -13,7 +13,7 @@ interface IProjectDrawer {
 export const ProjectDrawer = (props: IProjectDrawer) => {
   const { project, setSelectedProject } = props;
   return (
-    <div className="fixed bottom-0 left-0 w-full h-[75vh] bg-light-brown flex flex-col z-3">
+    <div className="fixed bottom-0 left-0 w-full max-w-screen h-[75vh] bg-light-brown flex flex-col z-3">
       <FaAngleDown
         className="text-[40px] text-dark-brown mt-xs hover:scale-110 active:scale-90 cursor-pointer self-center"
         onClick={() => {
@@ -61,12 +61,12 @@ export const ProjectDrawer = (props: IProjectDrawer) => {
             <div
               dangerouslySetInnerHTML={{
                 __html: `
-                  <video autoplay controls muted playsinline>
+                  <video autoPlay controls muted playsInLine>
                     <source src=${project.video} type="video/mp4" />
                       Your browser does not support the video tag.
                   </video>`,
               }}
-              className="w-[70vh] l:w-[90vh] rounded-m"
+              className="w-[50vh] l:w-[90vh] rounded-m"
             />
           )}
           {project.images && project.images.length > 0 && (
