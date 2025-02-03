@@ -12,7 +12,7 @@ export const ProjectBlock = (props: IProjectBlock) => {
   // https://www.codewonders.dev/projects
   return (
     <div
-      className={`rounded-s h-[300px] relative group overflow-hidden ${
+      className={`cursor-pointer rounded-s h-[300px] relative group overflow-hidden ${
         isNaN(selectedProject) && "hover:drop-shadow-lg active:scale-90"
       }`}
       onClick={() => {

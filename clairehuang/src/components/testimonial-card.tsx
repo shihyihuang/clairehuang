@@ -16,10 +16,17 @@ export const TestimonialCard = (props: ITestimonialCard) => {
             alt="profile"
             className="rounded-full w-[50px] h-[50px]"
           />
-          <div className="flex flex-col items-start justify-center ml-space-2">
-            <p className="playpen-san-content text-dark-brown text-ml font-[500]">
-              {content.name}
-            </p>
+          <div className="flex flex-col items-start text-left justify-center ml-space-2">
+            <a
+              href={content.linkedinUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="cursor-pointer">
+              <p className="playpen-san-content text-dark-brown text-ml font-[500]">
+                {content.name}
+              </p>
+            </a>
+
             <p className="playpen-san-content text-light-brown text-m font-[400]">
               {content.position}
             </p>
