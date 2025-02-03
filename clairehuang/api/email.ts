@@ -1,14 +1,17 @@
 import { IEmail } from "../src/types/email";
 import sendgrid from "@sendgrid/mail";
 
-if (!process.env.SENDGRID_API_KEY) {
-  console.error("SENDGRID_API_KEY is not set");
-  process.exit(1);
-}
-
-sendgrid.setApiKey(process.env.SENDGRID_API_KEY as string);
+const checkApiKey = (res: any) => {
+  if (!process.env.SENDGRID_API_KEY) {
+    console.error("SENDGRID_API_KEY is not set");
+    return res.status(500).json({ error: "No SENDGRID_API_KEY provided" });
+  }
+};
 
 export default async function handler(req: any, res: any) {
+  checkApiKey(res);
+  sendgrid.setApiKey(process.env.SENDGRID_API_KEY as string);
+
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method Not Allowed" });
   }
