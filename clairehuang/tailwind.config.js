@@ -37,6 +37,7 @@ module.exports = {
         "light-brown": "#EAD7BB",
         "block-white": "#FCF5ED",
         "warning-yellow": "#F7C566",
+        "error-red": "#C70039",
         "black-100": "#5B5B5B",
         "black-200": "#424242",
         "black-400": "#2E2E2E",
