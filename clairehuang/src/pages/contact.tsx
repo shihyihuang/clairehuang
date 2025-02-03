@@ -2,8 +2,13 @@ import { ContactForm } from "../components/contact/contact-form";
 import { ContactInfo } from "../components/contact/contact-info";
 import { useState } from "react";
 import { Dialog } from "../components/dialog";
+import { useEffect } from "react";
 
 export const Contact = () => {
+  useEffect(() => {
+    document.title = "Contact | Claire";
+  }, []);
+
   const [status, setStatus] = useState<string>("idle");
   const [openDialog, setOpenDialog] = useState<boolean>(false);
 

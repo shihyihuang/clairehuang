@@ -7,7 +7,7 @@ export const EMAIL_VALIDATION = {
   // Pattern to check for potentially dangerous strings
   dangerousPattern:
     /<|>|javascript:|data:|file:|vbscript:|onload=|onerror=|eval\(|expression\(|url\(|alert\(|document\.cookie|document\.write|window\.location/i,
-  nameErrorMessage: "Please enter a valid name (letters, spaces, hyphens)",
+  nameErrorMessage: "Please enter a valid name (letters, hyphens)",
   emailErrorMessage: "Please enter a valid email address",
   contentErrorMessage:
     "Please include alphanumeric characters and punctuation only",

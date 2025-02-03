@@ -5,8 +5,8 @@ const educationList = EDUCATION_LIST;
 
 export const HowIGotHere = () => {
   return (
-    <div className="max-h-screen">
-      <ol className="relative border-s border-dark-navy mx-l">
+    <div className="max-h-screen ">
+      <ol className="relative border-s border-dark-navy mx-m">
         {educationList.map((content, index) => (
           <li>
             <EducationStep key={index} content={content} />

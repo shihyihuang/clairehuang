@@ -31,7 +31,7 @@ export const SkillBlock = (props: ISkillBlock) => {
           rounded-s p-s transition-all duration-700 ease-in-out hover:shadow-lg hover:-translate-y-1 active:scale-90
           ${isSelected ? "h-[280px]" : "h-[200px]"}
         `}>
-      <p className="text-center text-xxxxl text-base-white px-space-1 py-s leading-none">
+      <p className="text-center text-xl l:text-xxxxl text-base-white px-space-2 py-s leading-none">
         {content.type}
       </p>
 
@@ -39,7 +39,7 @@ export const SkillBlock = (props: ISkillBlock) => {
         className={`overflow-hidden transition-opacity duration-1000 ease-in-out ${
           isSelected ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
         }`}>
-        <p className="text-center playpen-san-content text-ml text-light-brown">
+        <p className="text-center playpen-san-content text-m l:text-xl text-light-brown">
           {content.skills}
         </p>
       </div>

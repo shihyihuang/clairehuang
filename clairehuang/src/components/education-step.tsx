@@ -11,18 +11,18 @@ export const EducationStep = (props: IEducationStep) => {
     <li className="mb-6 ms-4 mt-m">
       <div className="absolute w-3 h-3 rounded-full mt-s -start-1.5 border bg-dark-navy border-dark-navy"></div>
       <div className="ml-s  text-start">
-        <p className="text-xxxl md:text-xxxxxxl font-black text-dark-navy leading-tight">
+        <p className="text-xxl md:text-xxxxxxl font-black text-dark-navy leading-tight">
           {content.degree}
         </p>
         <div className="flex items-center playpen-san-content">
-          <div className="w-5/6">
-            <p className="text-xl md:text-xxxl text-dark-brown pt-xs py-space-1 leading-tight">
+          <div className="w-2/3 l:w-5/6">
+            <p className="text-l md:text-xxxl text-dark-brown pt-xs py-space-1 leading-tight">
               {content.institution}
             </p>
-            <time className="text-l md:text-xl font-normal  text-base-white">
+            <time className="text-m md:text-xl font-normal  text-base-white">
               {content.time}
             </time>
-            <p className="text-l md:text-xl font-normal text-base-white leading-tight">
+            <p className="text-m md:text-xl font-normal text-base-white leading-tight">
               {" "}
               {content.info}
             </p>
@@ -30,7 +30,7 @@ export const EducationStep = (props: IEducationStep) => {
           <img
             src={content.image}
             alt="logo"
-            className="w-[120px] md:w-[200px] h-full"
+            className="w-[110px] md:w-[200px] h-full pl-m"
           />
         </div>
       </div>

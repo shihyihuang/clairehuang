@@ -27,7 +27,7 @@ export const ProjectBlock = (props: IProjectBlock) => {
         <h2 className=" text-xxxl l:text-xxxxl font-bold leading-none mb-space-2">
           {projects.name}
         </h2>
-        <p className="text-m l:text-l playpen-san-content">
+        <p className="text-m l:text-l playpen-san-content leading-tight">
           {projects.summary}
         </p>
       </div>

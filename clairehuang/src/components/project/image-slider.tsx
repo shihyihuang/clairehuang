@@ -23,7 +23,7 @@ export const ImageSlider = (props: IImageSlider) => {
   };
   return (
     <div className="flex justify-center items-center w-full rounded-m relative">
-      <div className="w-[50vh] md:w-[70vh] l:w-[80vh] rounded-m">
+      <div className="w-[40vh] md:w-[70vh] l:w-[80vh] rounded-m">
         <Slider
           {...settings}
           afterChange={(index: number) =>

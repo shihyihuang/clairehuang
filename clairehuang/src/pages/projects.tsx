@@ -1,9 +1,13 @@
 import { ProjectBlock } from "../components/project/project-block";
 import { ProjectDrawer } from "../components/project/project-drawer";
 import { PROJECT_LIST } from "../config/project";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export const Projects = () => {
+  useEffect(() => {
+    document.title = "Projects | Claire";
+  }, []);
+
   const projectList = PROJECT_LIST;
   const [selectedProject, setSelectedProject] = useState<number>(NaN);
   const isOpen = !isNaN(selectedProject);
@@ -11,7 +15,7 @@ export const Projects = () => {
   return (
     <div>
       <div
-        className={`flex flex-col min-h-screen w-full relative items-center justify-center mb-m ${
+        className={`flex flex-col min-h-screen max-w-screen relative items-center justify-center mb-m ${
           !isNaN(selectedProject) && "opacity-10"
         }`}
         onClick={() => {
@@ -19,7 +23,7 @@ export const Projects = () => {
         }}>
         <p className="text-[30px] md:text-[60px] l:text-[80px] py-m text-dark-navy">
           {" "}
-          My Works
+          Projects
         </p>
         <div className="grid gap-m grid-cols-2 l:grid-cols-3 w-full px-m l:px-l">
           {projectList.map((content, index) => (

@@ -115,7 +115,7 @@ export const ContactForm = (props: IContactForm) => {
 
   return (
     <form onSubmit={sendEmail} className="drop-shadow-lg">
-      <div className="flex flex-col items-start justify-center p-s md:p-m h-[50vh] bg-light-brown rounded-m ">
+      <div className="flex flex-col items-start justify-center px-s py-m md:px-m h-[60vh] bg-light-brown rounded-m ">
         {/* Name */}
         <div className="flex flex-col w-full pb-m">
           <div className="flex flex-row text-xxl">
