@@ -34,7 +34,7 @@ export const PROJECT_LIST: IProject[] = [
     id: 3,
     name: "Geospatial Analysis",
     summary:
-      "The report evaluates the distribution of bus stops near my home compared to the Monash bus loop, and validate the hypothesis that university-adjacent suburbs have a higher density of public transportation options.",
+      "The report evaluates the distribution of bus stops near my home compared to the Monash bus loop, and validate the hypothesis that university-adjacent suburbs have greater public transport density.",
     skills: ["QGIS", "Docker", "SQL", "PostgreSQL"],
     background: "/project/geo-analysis/data1.png",
     images: [
@@ -45,7 +45,7 @@ export const PROJECT_LIST: IProject[] = [
       "/project/geo-analysis/data5.png",
     ],
     about:
-      "The report analyzes PTV/GTFS and Australian Boundary datasets to explore whether closer bus stops exist, examine the accessibility of destinations via these routes, and validate the hypothesis that university-adjacent suburbs have greater public transport density.",
+      "The report analyzes PTV/GTFS and Australian Boundary datasets to explore whether closer bus stops exist, examine the accessibility of destinations via these routes, and validate the hypothesis that suburbs near universities exhibit a higher density of public transportation stops. This analysis is conducted by utilizing Docker for environment setup, PostgreSQL and PostGIS for data management, and QGIS for visualization.",
     github: "https://github.com/shihyihuang/MelbourneBusStops",
   },
   {

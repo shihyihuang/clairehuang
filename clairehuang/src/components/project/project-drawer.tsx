@@ -62,7 +62,9 @@ export const ProjectDrawer = (props: IProjectDrawer) => {
               src={project.video}
               className="w-[70vh] l:w-[90vh] rounded-m"
               controls
+              muted
               autoPlay
+              playsInline
             />
           )}
           {project.images && project.images.length > 0 && (
