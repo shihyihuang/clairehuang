@@ -10,7 +10,7 @@ export const NavBar = (props: INavBar) => {
   const { isOpen, setIsOpen } = props;
   const menuOptions = ["projects", "contact", "home"];
   return (
-    <div className="text-xxxl text-dark-navy font-black text-end absolute right-m top-s l:right-space-12 l:top-m z-[100] ">
+    <div className="text-xxxl text-dark-navy font-black text-end absolute right-m top-s l:right-space-[48px] l:top-m z-[100] ">
       <button
         className="hover:bg-dark-navy hover:text-base-white hover:drop-shadow-lg rounded-full p-xs"
         onClick={() => {

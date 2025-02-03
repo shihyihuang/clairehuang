@@ -45,7 +45,7 @@ export const PROJECT_LIST: IProject[] = [
       "/project/geo-analysis/data5.png",
     ],
     about:
-      "The report analyzes PTV/GTFS and Australian Boundary datasets to explore whether closer bus stops exist, examine the accessibility of destinations via these routes, and validate the hypothesis that suburbs near universities exhibit a higher density of public transportation stops. This analysis is conducted by utilizing Docker for environment setup, PostgreSQL and PostGIS for data management, and QGIS for visualization.",
+      "The report analyzes PTV/GTFS and Australian Boundary datasets to explore whether closer bus stops exist, examine the accessibility of destinations via these routes, and validate the hypothesis that university-adjacent suburbs have greater public transport density.",
     github: "https://github.com/shihyihuang/MelbourneBusStops",
   },
   {
@@ -75,7 +75,7 @@ export const PROJECT_LIST: IProject[] = [
     id: 5,
     name: "PET Planning",
     summary:
-      "An Android app that enables users to schedule pet events, visualize data, share content on Facebook, and synchronize local user data, including pet profiles and event information.",
+      "An Android app that enables users to schedule pet events, share content on Facebook, and synchronize local user data, including pet profiles and event information.",
     skills: [
       "Java",
       "Android Studio",
