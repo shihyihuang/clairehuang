@@ -58,12 +58,15 @@ export const ProjectDrawer = (props: IProjectDrawer) => {
 
         <div className="py-s ">
           {project.video && (
-            <video
-              src={project.video}
+            <div
+              dangerouslySetInnerHTML={{
+                __html: `
+                  <video autoplay controls muted playsinline>
+                    <source src=${project.video} type="video/mp4" />
+                      Your browser does not support the video tag.
+                  </video>`,
+              }}
               className="w-[70vh] l:w-[90vh] rounded-m"
-              autoPlay
-              muted
-              loop
             />
           )}
           {project.images && project.images.length > 0 && (
