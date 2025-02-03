@@ -1,4 +1,4 @@
-import { IEmail } from "../types/email";
+import { IEmail } from "../src/types/email";
 import sendgrid from "@sendgrid/mail";
 
 if (!process.env.SENDGRID_API_KEY) {
@@ -6,9 +6,9 @@ if (!process.env.SENDGRID_API_KEY) {
   process.exit(1);
 }
 
-export default async function handler(req: any, res: any) {
-  sendgrid.setApiKey(process.env.SENDGRID_API_KEY as string);
+sendgrid.setApiKey(process.env.SENDGRID_API_KEY as string);
 
+export default async function handler(req: any, res: any) {
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method Not Allowed" });
   }
