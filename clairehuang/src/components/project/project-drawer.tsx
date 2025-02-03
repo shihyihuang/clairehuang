@@ -61,10 +61,10 @@ export const ProjectDrawer = (props: IProjectDrawer) => {
             <video
               src={project.video}
               className="w-[70vh] l:w-[90vh] rounded-m"
-              controls
               muted
-              autoPlay
               playsInline
+              autoPlay
+              loop={true}
             />
           )}
           {project.images && project.images.length > 0 && (
