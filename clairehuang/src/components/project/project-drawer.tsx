@@ -58,16 +58,18 @@ export const ProjectDrawer = (props: IProjectDrawer) => {
 
         <div className="py-s ">
           {project.video && (
-            <div
-              dangerouslySetInnerHTML={{
-                __html: `
-                  <video autoPlay controls muted playsInLine>
-                    <source src=${project.video} type="video/mp4" />
-                      Your browser does not support the video tag.
-                  </video>`,
-              }}
-              className="w-[50vh] l:w-[90vh] rounded-m"
+            <video
+              src={project.video}
+              className="w-[70vh] l:w-[90vh] rounded-m "
+              playsInline
+              autoPlay
+              muted
             />
+            // <iframe
+            //   src={project.video}
+            //   className="w-[80vh] h-full rounded-m"
+            //   title={project.name}
+            // />
           )}
           {project.images && project.images.length > 0 && (
             <ImageSlider images={project.images} projectName={project.name} />
