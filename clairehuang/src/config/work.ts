@@ -27,12 +27,7 @@ export const WORK_LIST: IWork[] = [
     position: "IT Support",
     location: "Kaohsiung City, Taiwan",
     company: "Baixianwu Enterprise Co., Ltd.",
-    skills: [
-      "Domain & DNS Configuration",
-      "AWS",
-      "Microsoft 365",
-      "Web Hosting",
-    ],
+    skills: ["DNS Configuration", "AWS", "Microsoft 365", "Web Hosting"],
     image: "./education/monash.png",
   },
 ];
