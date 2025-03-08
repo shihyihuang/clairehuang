@@ -65,11 +65,6 @@ export const ProjectDrawer = (props: IProjectDrawer) => {
               autoPlay
               muted
             />
-            // <iframe
-            //   src={project.video}
-            //   className="w-[80vh] h-full rounded-m"
-            //   title={project.name}
-            // />
           )}
           {project.images && project.images.length > 0 && (
             <ImageSlider images={project.images} projectName={project.name} />

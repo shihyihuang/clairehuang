@@ -1,5 +1,5 @@
 import { SkillBlock } from "./skill-block";
-import { skills } from "../config/skill";
+import { skills } from "../../config/skill";
 import { useState } from "react";
 
 export const WhatIOffer = () => {

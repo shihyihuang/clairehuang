@@ -1,4 +1,4 @@
-import { ISkill } from "../types/skill";
+import { ISkill } from "../../types/skill";
 import { FaDatabase, FaChrome } from "react-icons/fa6";
 import { FaLaptopCode, FaCloud } from "react-icons/fa";
 

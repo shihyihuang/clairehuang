@@ -1,4 +1,4 @@
-import { EDUCATION_LIST } from "../config/education";
+import { EDUCATION_LIST } from "../../config/education";
 import { EducationStep } from "./education-step";
 
 const educationList = EDUCATION_LIST;

@@ -1,9 +1,9 @@
 // interface IWhatOthersSay {}
 import { TestimonialCard } from "./testimonial-card";
-import { TESTIMONOAL_LIST } from "../config/testimonial";
+import { TESTIMONOAL_LIST } from "../../config/testimonial";
 import { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
-import "../styles/testimonial.css";
+import "../../styles/testimonial.css";
 
 const testimonialList = TESTIMONOAL_LIST;
 

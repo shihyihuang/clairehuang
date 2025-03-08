@@ -35,7 +35,7 @@ export const ImageSlider = (props: IImageSlider) => {
                 src={image}
                 alt={`${projectName}${index + 1}`}
                 className={`border-none rounded-m ${
-                  projectName === "PET Planning"
+                  projectName === "PET Planning" || "Enterprise Network Design"
                     ? PetPlanningClass
                     : "w-[50vh] md:w-[70vh] l:w-[80vh]"
                 }`}

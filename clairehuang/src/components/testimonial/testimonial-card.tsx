@@ -1,4 +1,4 @@
-import { ITestimonial } from "../types/testimonial";
+import { ITestimonial } from "../../types/testimonial";
 import { FaStar } from "react-icons/fa";
 
 interface ITestimonialCard {

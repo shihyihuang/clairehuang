@@ -1,4 +1,4 @@
-import { IEducation } from "../types/education";
+import { IEducation } from "../../types/education";
 
 interface IEducationStep {
   content: IEducation;
@@ -19,7 +19,7 @@ export const EducationStep = (props: IEducationStep) => {
             <p className="text-l md:text-xxxl text-dark-brown pt-xs py-space-1 leading-tight">
               {content.institution}
             </p>
-            <time className="text-m md:text-xl font-normal  text-base-white">
+            <time className="text-m md:text-xl font-normal  text-dark-brown">
               {content.time}
             </time>
             <p className="text-m md:text-xl font-normal text-base-white leading-tight">

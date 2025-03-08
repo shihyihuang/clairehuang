@@ -119,4 +119,24 @@ export const PROJECT_LIST: IProject[] = [
       "Ａ containerized web service that leverages YOLO and OpenCV to detect objects in user-uploaded images, hosted on Kubernetes for scalable deployment. Implemented as a multi-threaded Flask REST API, the system accepts base64-encoded images via HTTP POST, returning a list of recognized objects. Experimental results highlight the trade-offs between the number of threads and pods is important to maximize performance without overloading the system.",
     github: "https://github.com/shihyihuang/cloudiod",
   },
+  {
+    id: 7,
+    name: "Enterprise Network Design",
+    summary:
+      "Designed a LAN/WLAN infrastructure, supported by load analysis and high-level conceptual floor/backbone diagrams.",
+    skills: [
+      "Network Architecture & Design",
+      "Hardware Selection",
+      "Technical Diagramming",
+    ],
+    background: "/project/network/network2.png",
+    images: [
+      "/project/network/network2.png",
+      "/project/network/network1.png",
+      "/project/network/network3.png",
+      "/project/network/network4.png",
+    ],
+    about:
+      "This project focused on upgrading an organization's existing IT infrastructure to accommodate a significant increase in users spanning multiple floors and buildings. By applying load analysis to predict peak traffic demands, a scalable LAN/WLAN environment was created, suitable network devices were selected, and structured cabling was implemented using floor plans and backbone diagrams.",
+  },
 ];
