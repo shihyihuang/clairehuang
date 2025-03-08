@@ -10,7 +10,7 @@ export const WORK_LIST: IWork[] = [
   },
   {
     time: "Oct 2024 - Dec 2024",
-    position: "Software Engineer",
+    position: "Full Stack Developer",
     location: "Remote",
     company: "GEDA Web3",
     skills: [
