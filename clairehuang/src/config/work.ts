@@ -6,7 +6,7 @@ export const WORK_LIST: IWork[] = [
     location: "Melbourne, Australia",
     company: "Freelance",
     skills: ["Next.js", "TypeScript", "Zustand", "UI/UX", "MaterialUI"],
-    image: "./education/monash.png",
+    url: "https://youtu.be/GtA5NwtjzLA",
   },
   {
     time: "Oct 2024 - Dec 2024",
@@ -20,7 +20,6 @@ export const WORK_LIST: IWork[] = [
       "MongoDB",
       "RESTful API",
     ],
-    image: "./education/monash.png",
   },
   {
     time: "Jan 2024 - Feb 2024",
@@ -28,6 +27,5 @@ export const WORK_LIST: IWork[] = [
     location: "Kaohsiung City, Taiwan",
     company: "Baixianwu Enterprise Co., Ltd.",
     skills: ["DNS Configuration", "AWS", "Microsoft 365", "Web Hosting"],
-    image: "./education/monash.png",
   },
 ];

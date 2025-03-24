@@ -5,4 +5,5 @@ export interface IWork {
   position: string;
   skills: string[];
   image?: string;
+  url?: string;
 }
