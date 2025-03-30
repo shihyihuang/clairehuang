@@ -3,15 +3,21 @@ import { Chip } from "../chip";
 import { Modal } from "../modal";
 import { IoPlayCircle } from "react-icons/io5";
 import { IoPlayCircleOutline } from "react-icons/io5";
+import { useState } from "react";
 
 interface IWorkStep {
   content: IWork;
-  isOpen: boolean;
   setIsOpen: (isOpen: boolean) => void;
 }
 
 export const WorkStep = (props: IWorkStep) => {
-  const { content, isOpen, setIsOpen } = props;
+  const { content, setIsOpen } = props;
+  const [openModal, setOpenModal] = useState(false);
+
+  const handleModal = (openModal: boolean) => {
+    setOpenModal(openModal);
+    setIsOpen(openModal);
+  };
 
   return (
     <li className="mb-6 ms-4 mt-m ">
@@ -23,13 +29,17 @@ export const WorkStep = (props: IWorkStep) => {
           </p>
           {content.url && (
             <button
-              onClick={() => setIsOpen(true)}
+              onClick={() => handleModal(!openModal)}
               className="hover:scale-110 hover:drop-shadow-xl active:scale-90 cursor-pointer text-xxl md:text-xxxxxxl text-dark-navy">
-              {isOpen ? <IoPlayCircle /> : <IoPlayCircleOutline />}
+              {openModal ? <IoPlayCircle /> : <IoPlayCircleOutline />}
             </button>
           )}
-          {isOpen && content.url && (
-            <Modal content={content.url} type="video" setIsOpen={setIsOpen} />
+          {openModal && content.url && (
+            <Modal
+              content={content.url}
+              type="video"
+              handleModal={handleModal}
+            />
           )}
         </div>
         <div className="flex flex-col playpen-san-content">

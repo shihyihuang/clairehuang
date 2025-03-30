@@ -7,12 +7,11 @@ import { useEffect } from "react";
 import { ToastContainer } from "react-toastify";
 
 interface IHome {
-  isOpen: boolean;
   setIsOpen: (isOpen: boolean) => void;
 }
 
 const Home = (props: IHome) => {
-  const { isOpen, setIsOpen } = props;
+  const { setIsOpen } = props;
 
   useEffect(() => {
     document.title = "Claire Huang";
@@ -42,7 +41,7 @@ const Home = (props: IHome) => {
         <h1 className="text-dark-navy mynerve text-[50px] md:text-[80px] l:text-[100px] leading-none pb-m">
           WHAT I'VE DONE
         </h1>
-        <WhatIveDone isOpen={isOpen} setIsOpen={setIsOpen} />
+        <WhatIveDone setIsOpen={setIsOpen} />
       </div>
       {/* education */}
       <div className="flex flex-col h-full min-h-screen items-center  justify-center bg-light-brown py-xl md:py-l l:py-xxl px-s l:px-m">

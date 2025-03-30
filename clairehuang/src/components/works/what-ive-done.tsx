@@ -3,24 +3,18 @@ import { WorkStep } from "./work-step";
 
 const workList = WORK_LIST;
 interface IWhatIveDone {
-  isOpen: boolean;
   setIsOpen: (isOpen: boolean) => void;
 }
 
 export const WhatIveDone = (props: IWhatIveDone) => {
-  const { isOpen, setIsOpen } = props;
+  const { setIsOpen } = props;
 
   return (
     <div className="max-h-screen">
       <ol className="relative border-s border-dark-navy mx-m">
         {workList.map((work, index) => (
           <li>
-            <WorkStep
-              key={index}
-              content={work}
-              isOpen={isOpen}
-              setIsOpen={setIsOpen}
-            />
+            <WorkStep key={index} content={work} setIsOpen={setIsOpen} />
           </li>
         ))}
       </ol>

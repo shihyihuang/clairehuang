@@ -58,12 +58,23 @@ export const ProjectDrawer = (props: IProjectDrawer) => {
 
         <div className="py-s ">
           {project.video && (
-            <iframe
-              className=" w-[350px] md:w-[574px] h-[197px] md:h-[323px]  rounded-m"
-              src={project.video}
-              title={project.name}
-              allow="autoplay; encrypted-media"
-            />
+            <div className="w-[80vw] md:w-[60vw] relative aspect-[5/2.81] rounded-m overflow-hidden bg-light-brown flex items-center justify-center">
+              <video
+                className="absolute inset-0 w-full h-full"
+                src={project.video}
+                title={project.name}
+                playsInline
+                webkit-playsinline="true"
+                controls
+                preload="metadata"
+              />
+              {/* <iframe
+                className="absolute inset-0 w-full h-full"
+                src={project.video}
+                title={project.name}
+                allow="autoplay; encrypted-media"
+              /> */}
+            </div>
           )}
           {project.images && project.images.length > 0 && (
             <ImageSlider images={project.images} projectName={project.name} />
