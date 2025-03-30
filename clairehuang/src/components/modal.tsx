@@ -31,9 +31,7 @@ export const Modal = (props: IModal) => {
               title="demo video"
               autoPlay
               controls
-              // playsInline
-              // webkit-playsinline="true"
-              // preload="metadata"
+              muted
             />
           </div>
         )}

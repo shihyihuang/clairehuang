@@ -56,25 +56,18 @@ export const ProjectDrawer = (props: IProjectDrawer) => {
           {project.about}
         </p>
 
-        <div className="py-s ">
+        <div className="py-s " onClick={(e) => e.stopPropagation()}>
           {project.video && (
             <div className="w-[80vw] md:w-[60vw] relative aspect-[5/2.81] rounded-m overflow-hidden bg-light-brown flex items-center justify-center">
               <video
                 className="absolute inset-0 w-full h-full"
                 src={project.video}
                 title={project.name}
-                autoPlay
                 controls
                 playsInline
-                webkit-playsinline="true"
                 preload="metadata"
+                muted
               />
-              {/* <iframe
-                className="absolute inset-0 w-full h-full"
-                src={project.video}
-                title={project.name}
-                allow="autoplay; encrypted-media"
-              /> */}
             </div>
           )}
           {project.images && project.images.length > 0 && (
