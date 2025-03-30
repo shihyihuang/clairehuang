@@ -6,7 +6,7 @@ export const WORK_LIST: IWork[] = [
     location: "Melbourne, Australia",
     company: "Freelance",
     skills: ["Next.js", "TypeScript", "Zustand", "UI/UX", "MaterialUI"],
-    url: "https://youtu.be/GtA5NwtjzLA",
+    url: "https://pokemon-collectible-demo.s3.ap-southeast-2.amazonaws.com/Untitled.mp4",
   },
   {
     time: "Oct 2024 - Dec 2024",

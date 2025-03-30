@@ -1,13 +1,17 @@
 import { IWork } from "../../types/work";
 import { Chip } from "../chip";
-import { MdOpenInNew } from "react-icons/md";
+import { Modal } from "../modal";
+import { IoPlayCircle } from "react-icons/io5";
+import { IoPlayCircleOutline } from "react-icons/io5";
 
 interface IWorkStep {
   content: IWork;
+  isOpen: boolean;
+  setIsOpen: (isOpen: boolean) => void;
 }
 
 export const WorkStep = (props: IWorkStep) => {
-  const { content } = props;
+  const { content, isOpen, setIsOpen } = props;
 
   return (
     <li className="mb-6 ms-4 mt-m ">
@@ -18,13 +22,14 @@ export const WorkStep = (props: IWorkStep) => {
             {content.position}
           </p>
           {content.url && (
-            <a
-              href={content.url}
-              className="hover:scale-110 hover:drop-shadow-xl active:scale-90 cursor-pointer"
-              target="_blank"
-              rel="noreferrer">
-              <MdOpenInNew className="text-xxl md:text-xxxxxl font-black text-dark-navy leading-tight" />
-            </a>
+            <button
+              onClick={() => setIsOpen(true)}
+              className="hover:scale-110 hover:drop-shadow-xl active:scale-90 cursor-pointer text-xxl md:text-xxxxxxl text-dark-navy">
+              {isOpen ? <IoPlayCircle /> : <IoPlayCircleOutline />}
+            </button>
+          )}
+          {isOpen && content.url && (
+            <Modal content={content.url} type="video" setIsOpen={setIsOpen} />
           )}
         </div>
         <div className="flex flex-col playpen-san-content">

@@ -6,7 +6,14 @@ import { WhatIveDone } from "../components/works/what-ive-done";
 import { useEffect } from "react";
 import { ToastContainer } from "react-toastify";
 
-const Home = () => {
+interface IHome {
+  isOpen: boolean;
+  setIsOpen: (isOpen: boolean) => void;
+}
+
+const Home = (props: IHome) => {
+  const { isOpen, setIsOpen } = props;
+
   useEffect(() => {
     document.title = "Claire Huang";
   }, []);
@@ -35,7 +42,7 @@ const Home = () => {
         <h1 className="text-dark-navy mynerve text-[50px] md:text-[80px] l:text-[100px] leading-none pb-m">
           WHAT I'VE DONE
         </h1>
-        <WhatIveDone />
+        <WhatIveDone isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
       {/* education */}
       <div className="flex flex-col h-full min-h-screen items-center  justify-center bg-light-brown py-xl md:py-l l:py-xxl px-s l:px-m">

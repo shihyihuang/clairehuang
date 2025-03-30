@@ -22,7 +22,10 @@ function App() {
           isOpen ? " opacity-10" : "opacity-100"
         }`}>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route
+            path="/"
+            element={<Home isOpen={isOpen} setIsOpen={setIsOpen} />}
+          />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
