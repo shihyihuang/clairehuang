@@ -48,7 +48,7 @@ export const ImageSlider = (props: IImageSlider) => {
             <div
               key={i}
               className={`w-[8px] h-[8px] rounded-full mr-space-2 ${
-                currentSlideIndex === i + 1 ? "bg-light-brown" : "bg-grey-800"
+                currentSlideIndex === i + 1 ? "bg-dark-brown" : "bg-grey-800"
               }`}
             />
           ))}

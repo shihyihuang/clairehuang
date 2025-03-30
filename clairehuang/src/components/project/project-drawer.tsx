@@ -58,12 +58,11 @@ export const ProjectDrawer = (props: IProjectDrawer) => {
 
         <div className="py-s ">
           {project.video && (
-            <video
+            <iframe
+              className=" w-[350px] md:w-[574px] h-[197px] md:h-[323px]  rounded-m"
               src={project.video}
-              className="w-[70vh] l:w-[90vh] rounded-m "
-              playsInline
-              autoPlay
-              muted
+              title={project.name}
+              allow="autoplay; encrypted-media"
             />
           )}
           {project.images && project.images.length > 0 && (

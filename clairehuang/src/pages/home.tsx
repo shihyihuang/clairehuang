@@ -4,6 +4,7 @@ import { HowIGotHere } from "../components/education/how-i-got-here";
 import { WhatIOffer } from "../components/skills/what-i-offer";
 import { WhatIveDone } from "../components/works/what-ive-done";
 import { useEffect } from "react";
+import { ToastContainer } from "react-toastify";
 
 const Home = () => {
   useEffect(() => {
@@ -12,6 +13,7 @@ const Home = () => {
 
   return (
     <div>
+      <ToastContainer position="bottom-right" />
       {/* landing main */}
       <Landing />
       {/* testimonial */}
