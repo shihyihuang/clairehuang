@@ -13,7 +13,7 @@ export const Modal = (props: IModal) => {
     <div
       className="fixed inset-0 items-center justify-center flex"
       onClick={() => handleModal(false)}>
-      <div className="relative">
+      <div className="relative" onClick={(e) => e.stopPropagation()}>
         <button onClick={() => handleModal(false)}>
           <IoClose className="absolute top-10 right-4 cursor-pointer text-xxxxl text-dark-brown border border-dark-brown bg-base-white rounded-full hover:bg-dark-brown hover:text-base-white hover:border-base-white active:scale-95 shadow-lg z-[100]" />
         </button>
@@ -29,17 +29,12 @@ export const Modal = (props: IModal) => {
               className="absolute inset-0 w-full h-full"
               src={content}
               title="demo video"
-              playsInline
-              webkit-playsinline="true"
+              autoPlay
               controls
-              preload="metadata"
+              // playsInline
+              // webkit-playsinline="true"
+              // preload="metadata"
             />
-            {/* <iframe
-              className="absolute inset-0 w-full h-full"
-              src={content}
-              title="demo video"
-              allow="autoplay; encrypted-media"
-            /> */}
           </div>
         )}
       </div>

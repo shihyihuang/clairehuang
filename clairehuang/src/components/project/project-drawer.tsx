@@ -63,9 +63,10 @@ export const ProjectDrawer = (props: IProjectDrawer) => {
                 className="absolute inset-0 w-full h-full"
                 src={project.video}
                 title={project.name}
+                autoPlay
+                controls
                 playsInline
                 webkit-playsinline="true"
-                controls
                 preload="metadata"
               />
               {/* <iframe
