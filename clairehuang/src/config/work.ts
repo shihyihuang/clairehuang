@@ -1,15 +1,15 @@
 import { IWork } from "../types/work";
 export const WORK_LIST: IWork[] = [
-  // {
-  //   time: "Feb 2025 - Present",
-  //   position: "Frontend Developer",
-  //   location: "Melbourne, Australia",
-  //   company: "Freelance",
-  //   skills: ["Next.js", "TypeScript", "Zustand", "UI/UX", "MaterialUI"],
-  //   url: "https://pokemon-collectible-demo.s3.ap-southeast-2.amazonaws.com/Untitled.mp4",
-  // },
   {
-    time: "Oct 2024 - Nov 2024",
+    time: "Feb 2025 - Present",
+    position: "Frontend Developer",
+    location: "Melbourne, Australia",
+    company: "Freelance",
+    skills: ["Next.js", "TypeScript", "Zustand", "UI/UX", "MaterialUI"],
+    url: "https://pokemon-collectible-demo.s3.ap-southeast-2.amazonaws.com/Untitled.mp4",
+  },
+  {
+    time: "Oct 2024 - Dec 2024",
     position: "Full Stack Developer",
     location: "Remote",
     company: "GEDA Web3",
